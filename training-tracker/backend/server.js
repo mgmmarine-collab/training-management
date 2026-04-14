@@ -5,7 +5,17 @@ const path = require('path');
 require('dotenv').config();
 
 const app = express();
-app.use(cors());
+
+// Configure CORS
+app.use(cors({
+  origin: [
+    'http://localhost:5173',
+    'http://localhost:3000',
+    'https://training-management-rxgz.vercel.app'
+  ],
+  credentials: true
+}));
+
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public'))); // Serve static files
 
