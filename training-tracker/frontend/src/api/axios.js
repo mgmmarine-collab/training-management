@@ -1,6 +1,5 @@
 import axios from 'axios';
-//const API_URL = "https://training-management-7g9w.vercel.app";
-const api = axios.create({ baseURL: 'https://training-management-7g9w.vercel.app' });
+const api = axios.create({ baseURL: 'https://training-management-rxgz.vercel.app/api' });
 //const api = axios.create({ baseURL: 'http://localhost:5000/api' });
 
 // Add token to every request
